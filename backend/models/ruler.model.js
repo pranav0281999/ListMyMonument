@@ -7,6 +7,25 @@ const rulerSchema = new Schema({
 		type: String,
 		required: true,
 		trim: true
+	},
+	notes: {
+		type: String,
+		trim: true
+	},
+	periodFrom: {
+		type: String,
+		required: true,
+		trim: true
+	},
+	periodTo: {
+		type: String,
+		required: true,
+		trim: true
+	},
+	dynasty: {
+		type: Schema.Types.ObjectId,
+		ref: 'Dynasty',
+		required: true
 	}
 },
 	{
